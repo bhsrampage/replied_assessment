@@ -1,0 +1,21 @@
+{
+  "name": "replied-assessment",
+  "version": "0.0.1",
+  "description": "Some rest APIs to showcase logic building ",
+  "main": "server.js",
+  "repository": "https://github.com/bhsrampage/replied_assessment.git",
+  "author": "bhsrampage",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "shorthash": "^0.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
