@@ -1,6 +1,9 @@
 /* Imports */
 const express = require("express");
 const dotenv = require("dotenv");
+const userRouter = require("./routes/userRoutes");
+const followRouter = require("./routes/followRoutes");
+const blockRouter = require("./routes/blockingRoutes");
 
 /* Initialisations */
 dotenv.config({ path: "./.env" });
@@ -20,6 +23,12 @@ app.use(function (req, res, next) {
   next();
 });
 
+/* Routers */
+app.use(userRouter);
+app.use(followRouter);
+app.use(blockRouter);
+
+/* PORT */
 const PORT = process.env.PORT || 8080;
 
 /* Server Running check endpoint */

@@ -1,4 +1,7 @@
-const store = {};
+const store = {
+  users: {},
+  followRequests: [],
+};
 
 exports.getStore = function () {
   return store;
