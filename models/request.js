@@ -16,7 +16,7 @@ exports.Status = {
 
 exports.createNewRequest = (fromUserID, toUserID) => {
   let temp = {
-    requestID: shorthash.unique(from + to),
+    requestID: shorthash.unique(fromUserID + toUserID),
     fromUserID,
     toUserID,
     status: this.Status.PENDING,
